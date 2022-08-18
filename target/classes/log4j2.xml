@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO" name="LogParser" packages="">
+    <appenders>
+
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MMM-dd HH:mm:ss a} | %-5p|[%X{classLevel} %X{testLevel}]|%c{1} - %m%n"/>
+        </Console>
+
+        <!-- Routing File Appender -->
+        <Routing name="Routing">
+            <Routes pattern="${ctx:threadName}">
+                <Route>
+                    <RollingFile name="LogParser.log" append="false" fileName="log/EventParser.txt"
+                                 filePattern="log/EventsParser-%d{MM-dd-yyyy}-%i.txt.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MMM-dd HH:mm:ss a} | %-5p|[%X{classLevel} %X{testLevel}]|%c{1} - %m%n"/>
+                        <Policies>
+                            <TimeBasedTriggeringPolicy/>
+                            <SizeBasedTriggeringPolicy size="50 MB"/>
+                        </Policies>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+    </appenders>
+
+    <loggers>
+        <root level="TRACE">
+            <appender-ref ref="Console" level="INFO"/>
+            <appender-ref ref="Routing" level="INFO"/>
+        </root>
+    </loggers>
+</configuration>

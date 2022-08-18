@@ -1,0 +1,9 @@
+com\parser\utility\PropertyReader.class
+com\parser\event\EventLog.class
+com\parser\event\EventLogLine$EventStatus.class
+com\parser\LogParser.class
+com\parser\utility\DBOperations.class
+com\parser\event\EventLogLine.class
+com\parser\event\EventOpr.class
+com\parser\utility\LogFileReader.class
+com\parser\utility\Logging.class

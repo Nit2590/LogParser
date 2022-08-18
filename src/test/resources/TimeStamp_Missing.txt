@@ -1,0 +1,2 @@
+{"id":"scsmbstgrb", "state":"STARTED", "timestamp":1491377495210}
+{"id":"scsmbstgrb", "state":"FINISHED"}

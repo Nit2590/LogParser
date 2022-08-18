@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Log Parser Test Suite" >
+
+    <test name="Log Parser">
+        <classes>
+            <class name="com.parser.LogParser_Test"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

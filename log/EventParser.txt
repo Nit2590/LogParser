@@ -1,0 +1,15 @@
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - Calling log parser operation on default file EventLogFile/Server_Event_Logs.txt
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - Successfully readed 3 distinct events from the file 
+2022-Aug-18 20:05:52 PM | INFO |[ ]|ENGINE - checkpointClose start
+2022-Aug-18 20:05:52 PM | INFO |[ ]|ENGINE - checkpointClose synched
+2022-Aug-18 20:05:52 PM | INFO |[ ]|ENGINE - checkpointClose script done
+2022-Aug-18 20:05:52 PM | INFO |[ ]|ENGINE - checkpointClose end
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - Successfully dropped any existing table with name EventsTable
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - Successfully created new db table with name :EventsTable
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - 3 rows inserted into table EVENTSTABLE
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - Events in the table :
+LOG_ID:scsmbstgra,  DURATION:5,  HOST:12345,  TYPE:APPLICATION_LOG,  ALERT:TRUE
+LOG_ID:scsmbstgrb,  DURATION:3,  HOST:123,  TYPE:SERVER_LOG,  ALERT:FALSE
+LOG_ID:scsmbstgrc,  DURATION:8,  HOST:54321,  TYPE:PRODSERVER_LOG,  ALERT:TRUE
+
+2022-Aug-18 20:05:52 PM | INFO |[ ]|LogParser - Connection to HSQL Server closed
