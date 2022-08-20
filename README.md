@@ -1,7 +1,7 @@
 # LogParser
 A small utility to parse server logs and filter them into DB table 
 
-Project Requirement ->
+Project Details ->
 
   Our custom-build server logs different events to a file named any  logfile.txt. Every event has 2 entries in the file
   - one entry when the event was started and another when the event was finished. The entries in the file have
@@ -33,7 +33,7 @@ application should create a new table if necessary and store the following value
 
 Steps to Run the Utility-->
   
-  Project Requirement
+  Project Requirement->
     1. Java 1.8
     2. Maven
     
