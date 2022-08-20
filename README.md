@@ -32,12 +32,16 @@ application should create a new table if necessary and store the following value
 • Alert (true if the event took longer than 4ms, otherwise false) 
 
 Steps to Run the Utility-->
+  
   Project Requirement
     1. Java 1.8
     2. Maven
+    
 1. Download all the dependencies mentinoned in the maven pom.xml
-2. open mvn terminal
+2. open mvn terminal/ Open windows cmd
 3. pass command -> mvn exec:java ( to run default file)
 4. pass command -> mvn  -Dexec.args="External file Path" (to run external files)
+5. Output can be seen in the console log . The Table created and Enteries within table is visible in file ->\DBLogsEvent\EventTracker.script
+6. Logs file an be found at location-> \log\EventParser.txt
 
 
